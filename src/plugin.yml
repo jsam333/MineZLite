@@ -1,0 +1,4 @@
+name: MineZLite
+version: 1.0
+main: org.spigotmc.MineZLite
+api-version: 1.19
