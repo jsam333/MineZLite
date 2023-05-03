@@ -2,3 +2,7 @@ name: MineZLite
 version: 1.0
 main: org.spigotmc.MineZLite
 api-version: 1.19
+commands:
+  broadcast:
+    description: Broadcast a message to the server.
+    usage: /<command> <message>
