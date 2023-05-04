@@ -5,11 +5,13 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 
+
 public class MineZLite extends JavaPlugin {
 
     @Override
     public void onEnable() {
         getLogger().info("Hello, World! MineZLite has been enabled.");
+        getServer().getPluginManager().registerEvents(new ZombieSpawnListener(), this);
     }
 
     @Override
