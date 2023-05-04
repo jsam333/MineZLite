@@ -42,7 +42,10 @@ public class PlayerManager implements Listener {
     private void update() {
         for (String playerName : playerNames) {
             plugin.getLogger().info("Player: " + playerName);
+            Player player = Bukkit.getPlayer(playerName);
+            if (player != null) {
+                player.setLevel(20);
+            }
         }
     }
 }
-
