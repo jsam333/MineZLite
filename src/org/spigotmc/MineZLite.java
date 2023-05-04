@@ -8,10 +8,13 @@ import org.bukkit.command.CommandSender;
 
 public class MineZLite extends JavaPlugin {
 
+    PlayerManager playerManager;
+    
     @Override
     public void onEnable() {
         getLogger().info("Hello, World! MineZLite has been enabled.");
         getServer().getPluginManager().registerEvents(new ZombieSpawnListener(), this);
+        playerManager = new PlayerManager(this);
     }
 
     @Override

@@ -17,7 +17,7 @@ public class ZombieSpawnListener implements Listener {
             Zombie zombie = (Zombie) event.getEntity();
             AttributeInstance movementSpeedAttribute = zombie.getAttribute(Attribute.GENERIC_MOVEMENT_SPEED);
             if (movementSpeedAttribute != null) {
-                double newSpeed = 3; 
+                double newSpeed = 1; 
                 movementSpeedAttribute.setBaseValue(newSpeed);
             }
         }
